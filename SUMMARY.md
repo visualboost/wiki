@@ -19,3 +19,5 @@
   * [Configuration](settings/configuration.md)
   * [Git](settings/git.md)
 * [Plugins](plugins.md)
+* [RoadMap](roadmap/README.md)
+  * [Documentation](roadmap/documentation.md)
