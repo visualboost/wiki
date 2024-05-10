@@ -4,7 +4,7 @@
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ID**         | Unique identifier. Will be defined automatically for each Model and Class.                                                                                        |
 | **Boolean**    | Represents a true/false value                                                                                                                                     |
-| **Text**       | Represents a string of characters                                                                                                                                 |
+| **String**     | Represents a string of characters                                                                                                                                 |
 | **Int**        | Represents an integer number                                                                                                                                      |
 | **Float**      | Represents a floating-point number (decimal)                                                                                                                      |
 | **Date**       | Represents a date value                                                                                                                                           |
