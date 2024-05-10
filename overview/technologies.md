@@ -4,7 +4,7 @@ VisualBoost brings about **two main things**:
 
 ## For Backend Development:
 
-* You get a the source code of a complete REST API.
+* You get a the source code of a complete **REST API**.
 * It's built with **NodeJS** and **Express**.
 * It uses **MongoDB** as its database.
 * The backend is **easily expandable** to incorporate your custom business logic.

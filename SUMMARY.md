@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Advantages](advantages.md)
+* [Advantages](overview/technologies.md)
 * [Installation](quick\_start/README.md)
   * [Quick-start](quick\_start/installation.md)
   * [On-Premise](quick\_start/on-premise.md)
