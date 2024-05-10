@@ -17,3 +17,4 @@
   * [Overview](settings/overview.md)
   * [Configuration](settings/configuration.md)
   * [Git](settings/git.md)
+* [Plugins](plugins.md)
