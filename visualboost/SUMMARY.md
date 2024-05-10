@@ -5,7 +5,7 @@
 * [Installation](installation/README.md)
   * [Quick-start](installation/quick-start.md)
   * [On-Premise](installation/on-premise.md)
-* [Project](project/README.md)
+* [Project](overview/project.md)
   * [Tutorial](project/tutorial.md)
 * [Overview](overview/README.md)
   * [Model-Editor](overview/model-editor/README.md)
