@@ -1,5 +1,9 @@
 # Properties
 
+A Model can be specified by different attributes.
+
+<figure><img src="../../.gitbook/assets/2024-05-10 21_56_53-Window.png" alt=""><figcaption></figcaption></figure>
+
 | Property-Types | Beschreibung                                                                                                                                                      |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ID**         | Unique identifier. Will be defined automatically for each Model and Class.                                                                                        |
