@@ -1,4 +1,4 @@
-# Technologies
+# Advantages
 
 VisualBoost brings about **two main things**:
 
@@ -9,10 +9,10 @@ VisualBoost brings about **two main things**:
 * It uses **MongoDB** as its database.
 * The backend is **easily expandable** to incorporate your custom business logic.
 
-## For Client Integration:
+## For Frontend:
 
-* You receive client code in [**Java**](#user-content-fn-1)[^1]. &#x20;
-* This lets you easily interact with the REST API directly.
+* You receive client code in [**Java**](#user-content-fn-1)[^1].&#x20;
+* This lets you easily interact with the REST API directly and focus on the UI.
 
 
 
