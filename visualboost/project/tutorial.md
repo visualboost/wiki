@@ -16,4 +16,4 @@ Enter a project name now (in this example "My Project") and click **Create** aft
 
 ## Step 3: Enter project
 
-Click on the new created project to enter the [Model-Editor](../overview/model-editor/).
+Click on the new created project to enter the [Model-Editor](../model-editor/).
