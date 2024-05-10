@@ -2,7 +2,7 @@
 
 VisualBoost brings about **two main things**:
 
-## For Backend Developments:
+## For Backend Development:
 
 * You get a the source code of a complete **REST API**.
 * It's built with **NodeJS** and **Express**.
