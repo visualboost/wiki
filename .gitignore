@@ -1,0 +1,9 @@
+# Ignore env
+.docker/.env
+
+#Ignore db data
+.docker/data
+
+#Ignore IDE settings
+.idea
+
