@@ -12,7 +12,7 @@
     * [Enumeration](overview/model-editor/enumeration.md)
     * [Properties](overview/model-editor/properties.md)
 * [Actions](actions/README.md)
-  * [Build](actions/build/README.md)
+  * [Build](actions/build.md)
     * [Backend](actions/build/backend.md)
     * [Client](actions/build/client.md)
   * [Synchronization](actions/synchronization.md)
