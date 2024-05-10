@@ -9,7 +9,7 @@ With VisualBoost, an intuitive web application, you can design your software con
 * With **VisualBoost**, you can design comprehensive software architectures and seamlessly translate them into a fully functional NodeJS backend applications with the necessary client code to interact with the REST API.
 * The end product, a fully working NodeJS application including a running MongoDB-Instance, belongs entirely to you, and you can customize the generated code as needed.
 
-### Why VisualBoost?
+## Why VisualBoost?
 
 * **Efficiency**: Accelerate your development process and save valuable time.
 * **Quality**: Our solutions are robust and scalable.
