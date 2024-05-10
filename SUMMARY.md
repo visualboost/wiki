@@ -1,8 +1,9 @@
 # Table of contents
 
-* [Quick-start](README.md)
-* [Installation](quick\_start.md)
-* [Introduction](introduction.md)
+* [Introduction](README.md)
+* [Installation](quick\_start/README.md)
+  * [Quick-start](quick\_start/installation.md)
+  * [On-Premise](quick\_start/on-premise.md)
 * [Overview](overview/README.md)
   * [Project](overview/project.md)
   * [Model-Editor](overview/model-editor/README.md)
