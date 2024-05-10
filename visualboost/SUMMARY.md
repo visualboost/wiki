@@ -2,9 +2,9 @@
 
 * [Introduction](README.md)
 * [Advantages](overview/technologies.md)
-* [Installation](../quick\_start/README.md)
-  * [Quick-start](../quick\_start/installation.md)
-  * [On-Premise](../quick\_start/on-premise.md)
+* [Installation](installation/README.md)
+  * [Quick-start](installation/quick-start.md)
+  * [On-Premise](installation/on-premise.md)
 * [Overview](overview/README.md)
   * [Project](overview/project.md)
   * [Model-Editor](overview/model-editor/README.md)
