@@ -15,4 +15,4 @@ With VisualBoost, an intuitive web application, you can design your software con
 * **Quality**: Our solutions are robust and scalable.
 * **Flexibility**: Customize the generated code to meet your specific requirements.
 
-We look forward to supporting you in your software development with **VisualBoost**! Visit our official website for more information.
+We look forward to supporting you in your software development with **VisualBoost**! Visit our [official website](https://visualboost.de) for more information, where you can also watch [our YouTube videos](https://www.youtube.com/watch?v=XkCMKl2S3Ao\&list=PL\_KLQBBjBxQaxzPsSb6UckLbwmTkG27Fm) for further details.
