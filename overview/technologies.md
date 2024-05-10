@@ -1,16 +1,19 @@
 # Technologies
 
-VisualBoost brings about two main things:
+VisualBoost brings about **two main things**:
 
-#### For Backend Development:
+## For Backend Development:
 
-* You get a complete REST API.
+* You get a the source code of a complete REST API.
 * It's built with **NodeJS** and **Express**.
 * It uses **MongoDB** as its database.
+* The backend is **easily expandable** to incorporate your custom business logic.
 
-#### For Client Integration:
+## For Client Integration:
 
-* You receive client code in [**Java**](#user-content-fn-1)[^1].&#x20;
+* You receive client code in [**Java**](#user-content-fn-1)[^1]. &#x20;
 * This lets you easily interact with the REST API directly.
+
+
 
 [^1]: Can be used for Kotlin projects as well.
