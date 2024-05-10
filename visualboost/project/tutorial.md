@@ -8,7 +8,7 @@ This tutorial shows you how to create a new VisualBoost project.
 
 <figure><img src="../.gitbook/assets/2024-05-10 21_37_57-Window.png" alt=""><figcaption></figcaption></figure>
 
-## Step 2: Enter a project name
+## Step 2: Define a project name
 
 Enter a project name now (in this example "My Project") and click **Create** afterwards.
 
