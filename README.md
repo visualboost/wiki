@@ -5,7 +5,7 @@ With VisualBoost, an intuitive web application, you can design your software con
 #### What is VisualBoost?
 
 * **VisualBoost** is a web-based application that assists developers in implementing backend code along with its corresponding client code to access the REST API.
-* We automate repetitive tasks so you can focus on business logic.
+* We automate repetitive tasks, such as writing boilerplate code for CRUD operations and handling database access, so you can focus on business logic.
 * With **VisualBoost**, you can design comprehensive software architectures and seamlessly translate them into fully functional backend applications with the necessary client code to interact with the REST API.
 * The end product belongs entirely to you, and you can customize the generated code as needed.
 
