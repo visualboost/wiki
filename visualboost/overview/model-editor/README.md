@@ -1,4 +1,3 @@
 # Model-Editor
 
-<figure><img src="../../.gitbook/assets/Modeleditor.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/Modeleditor2.png" alt=""><figcaption></figcaption></figure>
