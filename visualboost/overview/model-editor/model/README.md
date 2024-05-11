@@ -39,7 +39,8 @@ const PersonSchema = new Schema(
             type: String, 
             required: false, 
             indexed: false, 
-            unique: false},
+            unique: false
+        },
         birthdate: {
             type: Date,
             required: false,
