@@ -6,7 +6,9 @@ In the context of VisualBoost, a model defines a technical object.&#x20;
 
 To specify a model, properties can be created. These characterize the entity. For example, for an address data model, properties such as email, name, and birthdate can be defined.&#x20;
 
-<figure><img src="../../../.gitbook/assets/2024-05-11 13_28_25-Window.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../../.gitbook/assets/2024-05-11 14_38_02-Window.png" alt="" width="220"><figcaption></figcaption></figure>
 
 The **email** property is indicated by an exclamation mark (**!**), signifying that it is required.
 
