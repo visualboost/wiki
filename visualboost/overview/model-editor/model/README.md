@@ -18,47 +18,188 @@ VisualBoost offers the possibility to further customize these properties, such a
 
 When generating the backend application, a model is translated into two distinct files. One file contains the database structure of the model, while the other file includes the routes for the REST API.
 
-
-
 {% tabs %}
-{% tab title="./db/Person.js" %}
+{% tab title="./db/generated/AddressData.js" %}
 {% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
 ```javascript
-mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const ObjectId = mongoose.Types.ObjectId;
 
-const PersonSchema = new Schema(
+const AddressDataSchema = new Schema(
     {
-        email: {
-            type: String,
-            required: true,
-            indexed: false,
-            unique: false,
-        },
-        name: { 
-            type: String, 
-            required: false, 
-            indexed: false, 
-            unique: false
-        },
+        email: { type: String, required: true, indexed: false, unique: false },
+        name: { type: String, required: false, indexed: false, unique: false },
         birthdate: {
             type: Date,
             required: false,
             indexed: false,
             unique: false,
-        }
+        },
     },
-    {timestamps: true},
+    { timestamps: true },
 );
 
-module.exports = mongoose.model("Person", PersonSchema, "Person");
+module.exports = mongoose.model(
+    "AddressData",
+    AddressDataSchema,
+    "AddressData",
+);
+
 ```
 {% endcode %}
 
 
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="./routes/generated/AddressData.js" %}
+{% code overflow="wrap" lineNumbers="true" %}
+```javascript
+const router = require("express").Router();
+const mongoose = require("mongoose");
+const AddressData = require("./../../db/generated/AddressData");
 
+/**
+ * Get a AddressData by _id
+ **/
+router.get("/addressdata/:_id", async (req, res, next) => {
+    try {
+        if (!req.params._id) {
+            return res
+                .status(400)
+                .json({
+                    error: "Parameter '_id' is required but not provided.",
+                });
+        }
+
+        const addressdata = await AddressData.findOne(
+            { _id: req.params._id },
+            "-__v",
+            { minimize: true },
+        );
+
+        if (!addressdata) {
+            return res.status(404).send("Not Found");
+        }
+
+        return res.json(addressdata);
+    } catch (e) {
+        console.error(e);
+        return res.status(500).send("Internal Server Error");
+    }
+});
+
+/**
+ * Get all AddressData
+ **/
+router.get("/addressdatas", async (req, res, next) => {
+    try {
+        const addressdata = await AddressData.find({}, "-__v", {
+            minimize: true,
+        });
+
+        return res.json(addressdata);
+    } catch (e) {
+        console.error(e);
+        return res.status(500).send("Internal Server Error");
+    }
+});
+
+/**
+ * Creates a new AddressData
+ **/
+router.post("/addressdata", async (req, res, next) => {
+    try {
+        const input = req.body;
+
+        if (input.email === undefined || input.email === null) {
+            return res
+                .status(400)
+                .json({ error: "email is required but not provided." });
+        }
+
+        let addressdata = await AddressData.create({ ...input });
+        addressdata = await AddressData.findOne({ _id: addressdata._id });
+
+        return res.json(addressdata);
+    } catch (e) {
+        console.error(e);
+        return res.status(500).send("Internal Server Error");
+    }
+});
+
+/**
+ * Update an existing AddressData
+ **/
+router.put("/addressdata/:_id", async (req, res, next) => {
+    try {
+        if (!req.params._id) {
+            return res
+                .status(400)
+                .json({
+                    error: "Parameter '_id' is required but not provided.",
+                });
+        }
+
+        const id = req.params._id;
+        const input = req.body;
+
+        if (input.email === undefined || input.email === null) {
+            return res
+                .status(400)
+                .json({ error: "email is required but not provided." });
+        }
+
+        const addressdata = await AddressData.findOneAndUpdate(
+            { _id: req.params._id },
+            { ...input },
+            { new: true, lean: true },
+        );
+
+        if (!addressdata) {
+            return res.status(404).send("Not Found");
+        }
+
+        return res.json(addressdata);
+    } catch (e) {
+        console.error(e);
+        return res.status(500).send("Internal Server Error");
+    }
+});
+
+/**
+ * Delete an existing AddressData
+ **/
+router.delete("/addressdata/:_id", async (req, res, next) => {
+    try {
+        if (!req.params._id) {
+            return res
+                .status(400)
+                .json({
+                    error: "Parameter '_id' is required but not provided.",
+                });
+        }
+
+        const id = req.params._id;
+        const addressdata = await AddressData.findOneAndDelete(
+            { _id: req.params._id },
+            { __v: 0 },
+        );
+
+        if (!addressdata) {
+            return res.status(404).send("Not Found");
+        }
+
+        return res.json(addressdata);
+    } catch (e) {
+        console.error(e);
+        return res.status(500).send("Internal Server Error");
+    }
+});
+
+module.exports = router;
+
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
