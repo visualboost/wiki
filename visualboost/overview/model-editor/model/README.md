@@ -14,7 +14,7 @@ The **email** property is indicated by an exclamation mark (**!**), signifying t
 
 VisualBoost offers the possibility to further customize these properties, such as specifying whether an attribute is required or should be unique. Overall, a model helps to clearly define and organize how a backend application is structured and stores data, making it easier to develop and manage the application.
 
-
+In the next sections, we'll explain how we use the defined models to generate source code.
 
 ## Model in NodeJS (Backend):
 
