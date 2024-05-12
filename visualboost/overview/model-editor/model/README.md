@@ -16,7 +16,7 @@ VisualBoost offers the possibility to further customize these properties, such a
 
 
 
-## Model in NodeJS:
+## Model in NodeJS (Backend):
 
 When generating the backend application, a model is translated into two distinct files. One file contains the database structure of the model, while the other file includes the routes for the REST API.
 
@@ -47,11 +47,8 @@ module.exports = mongoose.model(
     AddressDataSchema,
     "AddressData",
 );
-
 ```
 {% endcode %}
-
-
 {% endtab %}
 
 {% tab title="./routes/generated/AddressData.js" %}
@@ -200,8 +197,18 @@ router.delete("/addressdata/:_id", async (req, res, next) => {
 });
 
 module.exports = router;
-
 ```
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+
+
+## Model in Java (Client):
+
+When generating the client code, a model is translated into multiple files.&#x20;
+
+* **Data** Class: The Model as Java class.
+* **DTO** Class: Represents the request body for **CREATE** and **UPDATE** functions.
+* **API** Class: Contains all functions.
+
