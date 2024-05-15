@@ -26,6 +26,7 @@
     * [Backend](actions/build/backend.md)
     * [Client](actions/build/client/README.md)
       * [Java](actions/build/client/java.md)
+      * [Kotlin](actions/build/client/kotlin.md)
   * [Synchronization](actions/synchronization.md)
 * [Plugins](../plugins.md)
 * [RoadMap](roadmap/README.md)
