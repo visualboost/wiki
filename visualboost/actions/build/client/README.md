@@ -4,3 +4,5 @@ Currently, VisualBoost can generate client code that enables communication with 
 
 * [Java](java.md)
 * [Kotlin](kotlin.md)
+
+You can choose the programming language for the client code in the settings under [**Configuration > Client**](../../../project/settings/configuration/client.md)**.**
