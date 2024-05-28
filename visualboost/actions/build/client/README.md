@@ -6,3 +6,7 @@ Currently, VisualBoost can generate client code that enables communication with 
 * [Kotlin](kotlin.md)
 
 You can choose the programming language for the client code in the settings under [**Configuration > Client**](../../../project/settings/configuration/client.md)**.**
+
+{% hint style="info" %}
+To generate the client side, it is necessary to specify the Git repository for the frontend (client) project in the [settings](../../../project/settings/git.md).
+{% endhint %}

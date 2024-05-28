@@ -9,7 +9,7 @@
   * [Tutorial](project/tutorial.md)
   * [Settings](project/settings/README.md)
     * [Overview](project/settings/overview.md)
-    * [Configuration](project/settings/configuration/README.md)
+    * [Configuration](project/settings/configuration.md)
       * [Client](project/settings/configuration/client.md)
     * [Git](project/settings/git.md)
 * [Model-Editor](overview/model-editor/README.md)
