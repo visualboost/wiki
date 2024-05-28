@@ -23,7 +23,7 @@
   * [Packages](overview/model-editor/packages.md)
 * [Actions](actions/README.md)
   * [Build](actions/build.md)
-    * [Backend](actions/build/backend.md)
+    * [Server application](actions/build/backend.md)
     * [Client](actions/build/client/README.md)
       * [Java](actions/build/client/java.md)
       * [Kotlin](actions/build/client/kotlin.md)
