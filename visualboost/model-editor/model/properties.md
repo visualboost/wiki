@@ -1,6 +1,6 @@
 # Properties
 
-In this chapter, we provide an overview of the properties that can be used to specify a model.
+Models and classes can be further specified by properties. Currently, the following properties are supported.
 
 | Property-Types | Beschreibung                                                                                                                                                      |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -14,12 +14,6 @@ In this chapter, we provide an overview of the properties that can be used to sp
 | **File**       | Represents a file. When creating a file property, a "Volume" is expected. A volume defines the directory within the backend application where the file is stored. |
 
 
-
-
-
-
-
-<figure><img src="../../.gitbook/assets/2024-05-10 21_56_53-Window.png" alt=""><figcaption></figcaption></figure>
 
 
 
