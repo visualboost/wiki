@@ -12,11 +12,11 @@ At the database level (MongoDB), a separate collection is created for each model
 
 To specify a model, properties can be created. These characterize the entity. For example, for an address data model, properties such as email, name, and birthdate can be defined.&#x20;
 
+|                                      Model                                     |                                      Class                                     |
+| :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
+| <img src="../../../.gitbook/assets/image (1).png" alt="" data-size="original"> | <img src="../../../.gitbook/assets/image (2).png" alt="" data-size="original"> |
 
-
-<figure><img src="../../../.gitbook/assets/2024-05-11 14_38_02-Window.png" alt="" width="220"><figcaption></figcaption></figure>
-
-The **email** property is indicated by an exclamation mark (**!**), signifying that it is required.
+The **name** property is indicated by an exclamation mark (**!**), signifying that it is required.
 
 VisualBoost offers the possibility to further customize these properties, such as specifying whether an attribute is required or should be unique. Overall, a model helps to clearly define and organize how a backend application is structured and stores data, making it easier to develop and manage the application.
 
