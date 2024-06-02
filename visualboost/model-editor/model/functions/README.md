@@ -11,13 +11,7 @@ description: >-
 
 For each model, multiple `READ`, `UPDATE`, and `DELETE` functions can be created, but only one `CREATE` function.
 
-| Function   | Description                                                                                                      |
-| ---------- | ---------------------------------------------------------------------------------------------------------------- |
-| `CREATE`   | Creates a new database entry of the model and returns it to the client.                                          |
-| `READ`     | Finds a single database entry of the model by a path and/or query parameters and returns it to the client.       |
-| `READ_ALL` | Finds multiple database entries of the model and returns it to the client. Can be specified by query parameters. |
-| `UPDATE`   | Updates an existing database entry and returns it to the client. Can be specified by path and query parameters.  |
-| `DELETE`   | Deletes an existing database entry and returns it to the client. Can be specified by path and query parameters.  |
+<table><thead><tr><th width="150">Function</th><th width="180">HTTP-Method</th><th>Description</th></tr></thead><tbody><tr><td><code>CREATE</code></td><td><code>POST</code></td><td>Creates a new database entry of the model and returns it to the client.</td></tr><tr><td><code>READ</code></td><td><code>GET</code></td><td>Finds a single database entry of the model by a path and/or query parameters and returns it to the client.</td></tr><tr><td><code>READ_ALL</code></td><td><code>GET</code></td><td>Finds multiple database entries of the model and returns it to the client. Can be specified by query parameters.</td></tr><tr><td><code>UPDATE</code></td><td><code>PUT</code></td><td>Updates an existing database entry and returns it to the client. Can be specified by path and query parameters.</td></tr><tr><td><code>DELETE</code></td><td><code>DELETE</code></td><td>Deletes an existing database entry and returns it to the client. Can be specified by path and query parameters.</td></tr></tbody></table>
 
 ## Path Parameter
 
@@ -49,3 +43,28 @@ Location is currently not supported.
 {% hint style="info" %}
 At the current time, only one path parameter is allowed
 {% endhint %}
+
+
+
+## Query Parameter
+
+Query parameters are used as search criteria or filtering options. They allow users to dynamically modify the content they receive by including key-value pairs, like `?name="Stephen"&age=24`, in the URL. At the moment, VisualBoost provides the nine different query operations, that can be specified in the `Path` input field of your CRUD function.
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+### Operators
+
+<table><thead><tr><th width="190">Query</th><th width="115" align="center">Operator</th><th>Example</th><th>Description</th></tr></thead><tbody><tr><td><code>EQUAL</code></td><td align="center">=</td><td>/persons?name=</td><td></td></tr><tr><td><code>NOT_EQUAL</code></td><td align="center">!=</td><td>/persons?name!=</td><td></td></tr><tr><td><code>LOWER</code></td><td align="center">&#x3C;</td><td>/persons?age&#x3C;</td><td></td></tr><tr><td><code>LOWER_THAN</code></td><td align="center">&#x3C;=</td><td>/persons?age&#x3C;=</td><td></td></tr><tr><td><code>GREATER</code></td><td align="center">></td><td>/persons?name></td><td></td></tr><tr><td><code>GREATER_THAN</code></td><td align="center">>=</td><td>/persons?age>=</td><td></td></tr><tr><td><code>IN</code></td><td align="center">.in()</td><td>/persons?age.in()</td><td></td></tr><tr><td><code>REGEX</code></td><td align="center">.regex()</td><td>/persons?age.in()</td><td>Only for text properties</td></tr><tr><td><code>NEAR</code></td><td align="center">.near()</td><td>/persons?age.in()</td><td>Only for location properties</td></tr></tbody></table>
+
+
+
+Add examples...
+
+
+
+### Static Values
+
+Add info...
+
+
+
