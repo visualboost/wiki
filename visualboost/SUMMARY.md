@@ -13,7 +13,7 @@
       * [Client](project/settings/configuration/client.md)
     * [Git](project/settings/git.md)
 * [Model-Editor](overview/model-editor/README.md)
-  * [Model](overview/model-editor/model/README.md)
+  * [Models & Classes](overview/model-editor/model/README.md)
     * [Properties](model-editor/model/properties.md)
     * [Functions](model-editor/model/functions/README.md)
       * [Projections](model-editor/model/functions/projections.md)
@@ -32,3 +32,4 @@
 * [Plugins](../plugins.md)
 * [RoadMap](roadmap/README.md)
   * [Documentation](roadmap/documentation.md)
+* [Tutorial](tutorial.md)

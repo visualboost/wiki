@@ -1,8 +1,14 @@
-# Model
+# Models & Classes
 
 ## Overview:
 
-In the context of VisualBoost, a model defines a technical object.&#x20;
+In the context of VisualBoost, a **Model** defines a technical object than can be specified by property and functions (CRUD and custom functions). **Classes**, on the other hand, represent simple data objects which can only be extended with their own business logic but not with CRUD functions.&#x20;
+
+{% hint style="info" %}
+At the database level (MongoDB), a separate collection is created for each model. Classes, on the other hand, correspond to subdocuments.
+{% endhint %}
+
+
 
 To specify a model, properties can be created. These characterize the entity. For example, for an address data model, properties such as email, name, and birthdate can be defined.&#x20;
 
@@ -761,4 +767,3 @@ public class API {
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-
