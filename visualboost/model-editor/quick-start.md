@@ -1,12 +1,14 @@
 # Quick-Start
 
+{% hint style="info" %}
+Alternatively, you can also watch our [video tutorial](https://www.youtube.com/watch?v=DO3IQ9kLYxw\&list=PL\_KLQBBjBxQaxzPsSb6UckLbwmTkG27Fm\&index=2).
+{% endhint %}
+
 In this chapter, you will learn how to create a model, a class, an enum, and a package. Each section will guide you through the process of building these components step-by-step.
 
 Before getting started, navigate to the Model Editor. It should look like this:
 
 <figure><img src="../.gitbook/assets/Modeleditor2.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Create a Model:
 
