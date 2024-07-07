@@ -62,21 +62,21 @@ Now enter your class name and confirm by clicking **Create:**
 
 Currently, there is no relationship between your model and your class.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To establish a connection between them, click on the connection point of your model. Then, hold down the left mouse button and drag the connection to a connection point of your class:
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Step 1: Click the connection point</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Step 1: Click the connection point</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Step 2: Drag the connection to a connection point of the class</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Step 2: Drag the connection to a connection point of the class</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Result: The Model is connect with the class</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Result: The Model is connect with the class</p></figcaption></figure>
 
 ## Create an Enum:
 
 Creating an enum follows the same process as creating a class. Navigate to **Add** -> **New Enum** and specify the name of your enum.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Doubleclick your enum to specify it. In the input field labeled **Values**, enter your values and confirm with Enter. Once you're done, click on **Save**.
 

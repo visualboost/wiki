@@ -6,7 +6,7 @@ In the configuration section, you can further customize the backend application 
 The settings are used to generate environment variables that the application uses for its configuration. The environment variables are not pushed to the Git repository for security reasons. They must be created manually during the initial setup and updated whenever there are changes.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 This includes:
 
@@ -43,4 +43,23 @@ The generated backend is located in `/home/vb/myfirstapp/backend` and the **data
 **Note:** The API-Key is included in the request header as **'x-api-key'**.
 {% endhint %}
 
+## Database
+
+* **User**: The user that is used to read and write from/to the database.
+* **Password**: The password of the database user.
+* **Port**: The port the database instance is running on.
+
+{% hint style="warning" %}
+**Warning:** Do not change the user or the password after creating the database without making a backup first. Otherwise, it could result in data loss.
+{% endhint %}
+
 ## Access Environment Variables
+
+The configuration is automatically provided by VisualBoost when creating a project. However, before the application can be started for the first time, the configuration parameters must be manually added to the software project. For this, a **.env** file must be manually created in both the **backend** and **db** directories. To add the respective environment variables to these files, you can click the button to display the environment variables.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+VisualBoost displays the required environment variables as they are needed in the NodeJS application. By clicking the copy button, the content can be copied and added to the project.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+

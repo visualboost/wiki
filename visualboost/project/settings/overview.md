@@ -2,7 +2,7 @@
 
 In the settings, you can specify the **project name** and **project description**. Additionally, you have the option to **delete the project**.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Project name:** A meaningful project title used in various contexts, such as in the `package.json` of the created NodeJS backend.
 * **Project description:** Also used in the `package.json` file, similar to the project name.

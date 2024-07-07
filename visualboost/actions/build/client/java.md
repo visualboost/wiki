@@ -2,7 +2,7 @@
 
 To enable java code generation for the client side, select **Java** as the programming language under [Configuration > Client](../../../project/settings/configuration/client.md). Additionally, you need to specify three directories where the client code will be generated.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Configuration in VisualBoost</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Configuration in VisualBoost</p></figcaption></figure>
 
 * **Source directory:** The relative path to a directory that contains the **Root java package.**
 * **Root java package:** This directory contains the controller class that can be used to execute the REST functions.
