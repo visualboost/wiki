@@ -14,17 +14,37 @@ Before getting started, navigate to the Model Editor. It should look like this:
 
 To create a model, right-click on the white surface and navigate to **Add** -> **New Model**.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 Now, specify the name of your model and confirm by clicking **Create**.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Congratulations, you have created your first model. The result should now look like this:
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 
+
+### Specify your Model:
+
+{% hint style="info" %}
+Every model and class has a parameter called **\_id**. This parameter is used to uniquely identify each entry in the database.
+{% endhint %}
+
+To specify a model, double-click on the model. A dialog will appear where you can add additional properties and functions.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+To add a new property, click on the plus symbol.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+Then, enter the name and data type of your new property. Confirm by clicking on **Add**.
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+The property has been added to the model. Similarly, you can further specify your model. For more information about properties, refer to the [details provided here.](model/properties.md)
 
 ## Create a Class:
 
@@ -57,6 +77,10 @@ To establish a connection between them, click on the connection point of your mo
 
 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>Result: The Model is connect with the class</p></figcaption></figure>
+
+
+
+## Create an Enum:
 
 
 
