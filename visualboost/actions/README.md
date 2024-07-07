@@ -9,4 +9,4 @@ VisualBoost offers two different actions:&#x20;
 
 Both actions can be found under the **Run** tab:
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

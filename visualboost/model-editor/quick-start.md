@@ -18,7 +18,7 @@ To create a model, right-click on the white surface and navigate to **Add** -> *
 
 Now, specify the name of your model and confirm by clicking **Create**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Congratulations, you have created your first model. The result should now look like this:
 
@@ -62,11 +62,11 @@ Now enter your class name and confirm by clicking **Create:**
 
 Currently, there is no relationship between your model and your class.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To establish a connection between them, click on the connection point of your model. Then, hold down the left mouse button and drag the connection to a connection point of your class:
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Step 1: Click the connection point</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Step 1: Click the connection point</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Step 2: Drag the connection to a connection point of the class</p></figcaption></figure>
 
