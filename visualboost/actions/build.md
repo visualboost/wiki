@@ -2,7 +2,7 @@
 
 The **Build** action describes the process where the software architecture is transformed into source code and then pushed to the respective Git repositories.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Before a build can be performed, a commit message, a version number, and the specification of target systems are required.
 

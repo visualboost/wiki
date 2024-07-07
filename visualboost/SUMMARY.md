@@ -13,6 +13,7 @@
       * [Client](project/settings/configuration/client.md)
     * [Git](project/settings/git.md)
 * [Model-Editor](overview/model-editor/README.md)
+  * [Quick-Start](model-editor/quick-start.md)
   * [Models & Classes](overview/model-editor/model/README.md)
     * [Properties](model-editor/model/properties.md)
     * [Functions](model-editor/model/functions/README.md)

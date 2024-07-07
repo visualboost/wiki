@@ -7,8 +7,3 @@ The Model Editor is a tool used to design system architecture. It allows for the
 * **Enumeration:** Constant values.
 * **Package:** Used to define a project structure.
 
-
-
-
-
-<figure><img src="../../.gitbook/assets/Modeleditor2.png" alt=""><figcaption></figcaption></figure>
