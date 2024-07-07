@@ -11,7 +11,7 @@ VisualBoost brings about **two main things**:
 
 ## For Frontend:
 
-* You receive client code in [**Java**](#user-content-fn-1)[^1].&#x20;
+* You receive client code in [**Java**](#user-content-fn-1)[^1] **or Kotlin**.&#x20;
 * This lets you easily interact with the REST API directly and focus on the UI.
 
 

@@ -29,7 +29,3 @@
       * [Kotlin](actions/build/client/kotlin.md)
   * [Synchronization](actions/synchronization.md)
 * [Documentation](documentation.md)
-* [Plugins](../plugins.md)
-* [RoadMap](roadmap/README.md)
-  * [Documentation](roadmap/documentation.md)
-* [Tutorial](tutorial.md)
