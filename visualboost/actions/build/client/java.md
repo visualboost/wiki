@@ -10,7 +10,7 @@ To enable java code generation for the client side, select **Java** as the progr
 
 These settings allow you to configure the folder.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>generated directories and files</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>generated directories and files</p></figcaption></figure>
 
 
 

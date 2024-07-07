@@ -50,7 +50,7 @@ At the current time, only one path parameter is allowed
 
 Query parameters are used as search criteria or filtering options. They allow users to dynamically modify the content they receive by including key-value pairs, like `?name="Stephen"&age=24`, in the URL. At the moment, VisualBoost provides the nine different query operations, that can be specified in the `Path` input field of your CRUD function.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Operators
 
