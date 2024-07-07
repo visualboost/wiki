@@ -61,5 +61,9 @@ The configuration is automatically provided by VisualBoost when creating a proje
 
 VisualBoost displays the required environment variables as they are needed in the NodeJS application. By clicking the copy button, the content can be copied and added to the project.
 
+<div data-full-width="true">
+
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
