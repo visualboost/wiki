@@ -58,7 +58,7 @@ Now enter your class name and confirm by clicking **Create:**
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-## Create a connection:
+## Create a Connection:
 
 Currently, there is no relationship between your model and your class.&#x20;
 
@@ -85,6 +85,22 @@ Doubleclick your enum to specify it. In the input field labeled **Values**, ente
 You can establish a connection between a model or class and an enum similar to the [Create a connection chapter](quick-start.md#create-a-connection).
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Create a Package:
+
+Create a package by clicking on **Add** -> **New Package.** Enter a package name and config by clicking **Create**.
+
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+Resize your package by clicking and holding the resize icon, then moving your mouse.
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+Now add your Model, Class and Enum to the newly created package by dragging them into the package.
+
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 
 
