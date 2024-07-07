@@ -9,6 +9,6 @@ The Model Editor is a tool used to design system architecture. It allows for the
 
 
 
-#### How to start:
+
 
 <figure><img src="../../.gitbook/assets/Modeleditor2.png" alt=""><figcaption></figcaption></figure>

@@ -1,0 +1,1437 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "0.0.9",
+    "title": "Project: Label",
+    "description": "Tool zum Labeln von Fu?messdaten"
+  },
+  "components": {
+    "securitySchemes": {
+      "API-Key": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "api_key"
+      }
+    },
+    "schemas": {
+      "CreateFileRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "checksum",
+          "filetype",
+          "name",
+          "path",
+          "labels",
+          "projectId"
+        ],
+        "properties": {
+          "checksum": {
+            "type": "string",
+            "description": "The MD5 checksum of the file. This can be used to identify if the file changed."
+          },
+          "filetype": {
+            "type": "string",
+            "description": "",
+            "enum": [
+              "JPG",
+              "PNG",
+              "OBJ",
+              "STL",
+              "APD",
+              "DAT"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "path": {
+            "type": "string",
+            "description": ""
+          },
+          "labels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "$ref": "#/components/schemas/Label.Label"
+            }
+          },
+          "projectId": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      },
+      "CustomRouteSomepathparamBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      },
+      "CustomRouteSomepathparamResult": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "result"
+        ],
+        "properties": {
+          "result": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      },
+      "File": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "checksum",
+          "filetype",
+          "name",
+          "path",
+          "labels",
+          "projectId"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "checksum": {
+            "type": "string",
+            "description": "The MD5 checksum of the file. This can be used to identify if the file changed."
+          },
+          "filetype": {
+            "type": "string",
+            "description": "",
+            "enum": [
+              "JPG",
+              "PNG",
+              "OBJ",
+              "STL",
+              "APD",
+              "DAT"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "path": {
+            "type": "string",
+            "description": ""
+          },
+          "labels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "$ref": "#/components/schemas/Label.Label"
+            }
+          },
+          "projectId": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      },
+      "Label.CreateLabelCategoryRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name",
+          "labels"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "labels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "$ref": "#/components/schemas/Label.Label"
+            }
+          }
+        }
+      },
+      "Label.CreateLabelRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "avoidLabels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Label.Label": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "avoidLabels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Label.LabelCategory": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name",
+          "labels"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "labels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "$ref": "#/components/schemas/Label.Label"
+            }
+          }
+        }
+      },
+      "Label.UpdateLabelCategoryRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "labels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "Label.UpdateLabelRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "avoidLabels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "UpdateFileRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "checksum",
+          "filetype",
+          "name",
+          "path",
+          "projectId"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "checksum": {
+            "type": "string",
+            "description": "The MD5 checksum of the file. This can be used to identify if the file changed."
+          },
+          "filetype": {
+            "type": "string",
+            "description": "",
+            "enum": [
+              "JPG",
+              "PNG",
+              "OBJ",
+              "STL",
+              "APD",
+              "DAT"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "path": {
+            "type": "string",
+            "description": ""
+          },
+          "labels": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "type": "string"
+            }
+          },
+          "projectId": {
+            "type": "string",
+            "description": ""
+          }
+        }
+      },
+      "project.CreateProjectRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name",
+          "labelCategories",
+          "options"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "labelCategories": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "$ref": "#/components/schemas/Label.LabelCategory"
+            }
+          },
+          "options": {
+            "$ref": "#/components/schemas/project.Options"
+          }
+        }
+      },
+      "project.Options": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "summarycriteria",
+          "rootDir",
+          "transferLabellingIsEnabled"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "summarycriteria": {
+            "type": "string",
+            "description": "",
+            "enum": [
+              "FILENAME"
+            ]
+          },
+          "rootDir": {
+            "type": "string",
+            "description": "Defines the directory that contains all files"
+          },
+          "transferLabellingIsEnabled": {
+            "type": "boolean",
+            "description": ""
+          }
+        }
+      },
+      "project.Project": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name",
+          "labelCategories",
+          "options"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "labelCategories": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "$ref": "#/components/schemas/Label.LabelCategory"
+            }
+          },
+          "options": {
+            "$ref": "#/components/schemas/project.Options"
+          }
+        }
+      },
+      "project.UpdateProjectRequestBody": {
+        "type": "object",
+        "description": "",
+        "required": [
+          "name",
+          "options"
+        ],
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "A unique identifier"
+          },
+          "name": {
+            "type": "string",
+            "description": ""
+          },
+          "labelCategories": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "type": "string"
+            }
+          },
+          "options": {
+            "$ref": "#/components/schemas/project.Options"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/file": {
+      "post": {
+        "operationId": "createFile",
+        "description": "Creates a new File",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateFileRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "File"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/File"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/file/{_id}": {
+      "put": {
+        "operationId": "updateFile",
+        "description": "Update an existing File",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateFileRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "File"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/File"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The File does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "deleteFile",
+        "description": "Delete an existing File",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "File"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/File"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The File does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/files": {
+      "get": {
+        "operationId": "getAllFilesOfProject",
+        "description": "Get all Files",
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "description": ".e.g. sort={your_property:asc} or sort={your_property:desc}",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": ".e.g. page=1",
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "projectId",
+            "in": "query",
+            "description": "query value for projectId. Query type is equal (=).",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "File"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/File"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/custom/route/{some_path_param}": {
+      "post": {
+        "operationId": "myCustomFunction",
+        "description": "This is an example of a custom function",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomRouteSomepathparamBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Label.Label"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomRouteSomepathparamResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/label/{_id}": {
+      "put": {
+        "operationId": "updateLabel",
+        "description": "Update an existing Label",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Label.UpdateLabelRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Label.Label"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Label.Label"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The Label does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "deleteLabel",
+        "description": "Delete an existing Label",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "Label.Label"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Label.Label"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The Label does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/label": {
+      "post": {
+        "operationId": "createLabel",
+        "description": "Creates a new Label",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Label.CreateLabelRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Label.Label"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Label.Label"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/labelcategory/{_id}": {
+      "get": {
+        "operationId": "getLabelCategory",
+        "description": "Get a LabelCategory by _id",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "Label.LabelCategory"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Label.LabelCategory"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The LabelCategory does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "updateLabelCategory",
+        "description": "Update an existing LabelCategory",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Label.UpdateLabelCategoryRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Label.LabelCategory"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Label.LabelCategory"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The LabelCategory does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "deleteLabelCategory",
+        "description": "Delete an existing LabelCategory",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "Label.LabelCategory"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Label.LabelCategory"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The LabelCategory does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/labelcategorys": {
+      "get": {
+        "operationId": "getAllLabelCategories",
+        "description": "Get all LabelCategories",
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "description": ".e.g. sort={your_property:asc} or sort={your_property:desc}",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": ".e.g. page=1",
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "tags": [
+          "Label.LabelCategory"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Label.LabelCategory"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/labelcategory": {
+      "post": {
+        "operationId": "createLabelCategory",
+        "description": "Creates a new LabelCategory",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Label.CreateLabelCategoryRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Label.LabelCategory"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Label.LabelCategory"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/project/{_id}": {
+      "get": {
+        "operationId": "getProject",
+        "description": "Get a Project by _id",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "project.Project"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/project.Project"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The Project does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "updateProject",
+        "description": "Update an existing Project",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/project.UpdateProjectRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "project.Project"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/project.Project"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The Project does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "deleteProject",
+        "description": "Delete an existing Project",
+        "parameters": [
+          {
+            "name": "_id",
+            "in": "path",
+            "description": "A unique identifier",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "tags": [
+          "project.Project"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/project.Project"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "The Project does not exist",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/projects": {
+      "get": {
+        "operationId": "getAllProjects",
+        "description": "Get all Projects",
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "description": ".e.g. sort={your_property:asc} or sort={your_property:desc}",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": ".e.g. page=1",
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "tags": [
+          "project.Project"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/project.Project"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/project": {
+      "post": {
+        "operationId": "createProject",
+        "description": "Creates a new Project",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/project.CreateProjectRequestBody"
+              }
+            }
+          }
+        },
+        "tags": [
+          "project.Project"
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/project.Project"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid body",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected error",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "API-Key": []
+    }
+  ]
+}
