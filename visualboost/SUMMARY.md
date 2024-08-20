@@ -29,4 +29,4 @@
       * [Kotlin](actions/build/client/kotlin.md)
   * [Synchronization](actions/synchronization.md)
 * [Documentation](documentation.md)
-* [Plugin](plugin.md)
+* [Plugin (coming soon)](plugin-coming-soon.md)
