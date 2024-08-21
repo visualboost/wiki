@@ -1,16 +1,42 @@
 # Create Project
 
-The VisualBoost-Plugin helps software developers to create efficently new projects. The result is a fully working NodeJS-Backend application that can be extended and customized using VisualBoost within the Webstorm IDE.
+The VisualBoost plugin helps software developers efficiently create new projects. The result is a fully functional Node.js backend application that can be extended and customized using VisualBoost within the WebStorm IDE.
 
-## How to create a new Project?
+## **How to create a new project:**
 
-To create a new project, simply click on **File -> New -> Project** inside the Webstorm IDE and select **VisualBoost**. The following information is needed in order to create a new project:
+To create a new project, simply click on **File -> New -> Project** inside the WebStorm IDE and select **VisualBoost**. The following information is required to create a new project:
 
-* **Location (Required):** The directory of your VisualBoost Project
-* **Name (Required):** The name of the VisualBoost Project&#x20;
-* **Credentials**: Enter the email address and the password of your VisualBoost-Account and click _Login_.
-* **Github:** Click _Login_ to&#x20;
+* **Location (Required):** The directory where your VisualBoost project will be stored.
+* **Name (Required):** The name of your VisualBoost project.&#x20;
+* **Credentials:** Enter the email address and password for your VisualBoost account and click _Login_.
+* **GitHub:** Click _Login_ to open the GitHub login app. Enter your credentials and proceed. After successfully logging into GitHub, you can either create a new repository for your VisualBoost project or select an existing one. The repository will be automatically connected to your VisualBoost project and will contain the source code.
 
 <figure><img src="../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
-To create a&#x20;
+After providing the necessary data, click **Create** to execute the following steps:
+
+1. Create a new VisualBoost Project
+2. Create a new Git repository if _Create new repository_ was selected.
+3. Connect the the repository to the VisualBoost project.
+4. Clone the repository
+5. Provide environment variables for development (The environment variables will be ignored by Git).
+6. Setup the database
+7. Setup the NodeJS application
+8. Provide Run Configurations within your Webstorm IDE.
+
+After entering the required information, click **Create** to initiate the following processes:
+
+1. A new VisualBoost project will be created.
+2. If **Create new repository** is selected, a new Git repository will be generated.
+3. The repository will be linked to the VisualBoost project.
+4. The repository will be cloned locally.
+5. Development environment variables will be configured (these variables will be excluded from version control in Git).
+6. The database will be set up.
+7. The Node.js application will be configured.
+8. Run configurations will be provided within your WebStorm IDE.
+
+<figure><img src="../.gitbook/assets/create_vb_project.gif" alt=""><figcaption><p>Create a new Project</p></figcaption></figure>
+
+The provided application is fully executable and can be put into operation by first running **Start Database** and then **Start Application**.
+
+> Note: A running Docker engine and having npm installed are prerequisites for starting the application.
