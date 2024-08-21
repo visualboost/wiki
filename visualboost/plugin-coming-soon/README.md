@@ -12,7 +12,7 @@ The VisualBoost plugin for [WebStorm ](https://www.jetbrains.com/webstorm/)seaml
 
 Interact with VisualBoost directly within your JetBrains IDE via the VisualBoost tool window.
 
-### Simple Project Creation
+### [Simple Project Creation](create-project.md)
 
 Quickly create new VisualBoost projects from within your IDE.
 
@@ -27,20 +27,4 @@ Extensions sync automatically with VisualBoost upon saving.
 ### Automatic Pulling after Build
 
 Your IDE automatically pulls the latest Git changes after each VisualBoost build.
-
-
-
-
-
-
-
-
-
-## Create Project
-
-<figure><img src=".gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src=".gitbook/assets/create_vb_project.gif" alt=""><figcaption></figcaption></figure>
 

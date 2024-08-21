@@ -29,4 +29,5 @@
       * [Kotlin](actions/build/client/kotlin.md)
   * [Synchronization](actions/synchronization.md)
 * [Documentation](documentation.md)
-* [Plugin (coming soon)](plugin-coming-soon.md)
+* [Plugin (coming soon)](plugin-coming-soon/README.md)
+  * [Create Project](plugin-coming-soon/create-project.md)
