@@ -8,13 +8,15 @@ The VisualBoost plugin for [WebStorm ](https://www.jetbrains.com/webstorm/)seaml
 
 ## Features
 
+### [Simple Project Creation](create-project.md)
+
+Quickly create new VisualBoost projects from within your IDE.
+
 ### Integration into WebStorm
 
 Interact with VisualBoost directly within your JetBrains IDE via the VisualBoost tool window.
 
-### [Simple Project Creation](create-project.md)
 
-Quickly create new VisualBoost projects from within your IDE.
 
 ### Adding Extensions including Live Templates
 

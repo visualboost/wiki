@@ -13,17 +13,6 @@ To create a new project, simply click on **File -> New -> Project** inside the W
 
 <figure><img src="../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
-After providing the necessary data, click **Create** to execute the following steps:
-
-1. Create a new VisualBoost Project
-2. Create a new Git repository if _Create new repository_ was selected.
-3. Connect the the repository to the VisualBoost project.
-4. Clone the repository
-5. Provide environment variables for development (The environment variables will be ignored by Git).
-6. Setup the database
-7. Setup the NodeJS application
-8. Provide Run Configurations within your Webstorm IDE.
-
 After entering the required information, click **Create** to initiate the following processes:
 
 1. A new VisualBoost project will be created.
