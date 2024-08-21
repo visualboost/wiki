@@ -31,4 +31,4 @@
 * [Documentation](documentation.md)
 * [Plugin (coming soon)](plugin-coming-soon/README.md)
   * [Create Project](plugin-coming-soon/create-project.md)
-  * [Integration](plugin-coming-soon/integration.md)
+  * [The ToolWindow](plugin-coming-soon/the-toolwindow.md)
