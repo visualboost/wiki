@@ -12,7 +12,7 @@ The VisualBoost plugin for [WebStorm ](https://www.jetbrains.com/webstorm/)seaml
 
 Quickly create new VisualBoost projects from within your IDE.
 
-### [Integration into WebStorm](the-toolwindow.md)
+### [Integration into WebStorm](toolwindow.md)
 
 Interact with VisualBoost directly within your JetBrains IDE via the VisualBoost tool window.
 
