@@ -11,7 +11,7 @@ To create a new project, simply click on **File -> New -> Project** inside the W
 * **Credentials:** Enter the email address and password for your VisualBoost account and click _Login_.
 * **GitHub:** Click _Login_ to open the GitHub login app. Enter your credentials and proceed. After successfully logging into GitHub, you can either create a new repository for your VisualBoost project or select an existing one. The repository will be automatically connected to your VisualBoost project and will contain the source code.
 
-<figure><img src="../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/new_project.png" alt=""><figcaption></figcaption></figure>
 
 After entering the required information, click **Create** to initiate the following processes:
 
