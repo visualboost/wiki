@@ -24,7 +24,7 @@ After entering the required information, click **Create** to initiate the follow
 7. The Node.js application will be configured.
 8. Run configurations will be provided within your WebStorm IDE.
 
-<figure><img src="../.gitbook/assets/create_vb_project.gif" alt=""><figcaption><p>Create a new Project</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/create_vb_project (1).gif" alt=""><figcaption></figcaption></figure>
 
 The provided application is fully executable and can be put into operation by first running **Start Database** and then **Start Application**.
 
