@@ -17,6 +17,8 @@
   * [Models & Classes](overview/model-editor/model/README.md)
     * [Properties](model-editor/model/properties.md)
     * [Functions](model-editor/model/functions/README.md)
+      * [CRUD](model-editor/model/functions/crud.md)
+      * [Extension](model-editor/model/functions/extension.md)
       * [Projections](model-editor/model/functions/projections.md)
   * [Enumeration](overview/model-editor/enumeration.md)
   * [Relationships](overview/model-editor/relationships.md)
