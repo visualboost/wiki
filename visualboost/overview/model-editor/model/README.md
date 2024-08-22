@@ -12,9 +12,9 @@ At the database level (MongoDB), a separate collection is created for each model
 
 To specify a model, properties can be created. These characterize the entity. For example, for an address data model, properties such as email, name, and birthdate can be defined.&#x20;
 
-|                                                Model                                               |                                                Class                                               |
-| :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
-| <img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" data-size="original"> | <img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" data-size="original"> |
+|                                                  Model                                                 |                                                Class                                               |
+| :----------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
+| <img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original"> | <img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" data-size="original"> |
 
 The **name** property is indicated by an exclamation mark (**!**), signifying that it is required.
 

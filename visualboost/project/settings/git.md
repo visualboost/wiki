@@ -2,7 +2,7 @@
 
 In the Git section, you can add repositories for both the server and client applications.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Base-Application (Server):** This repository contains a plain NodeJS / Express-Application. This application is assembled with the generated database models and REST paths.&#x20;
 * **Server-Application:** The repository that contains the complete source code of the server application after the user builded the application.
@@ -14,7 +14,7 @@ In the Git section, you can add repositories for both the server and client appl
 
 To link a Git repository with VisualBoost, enter the URL of the Git repository and click **Connect**.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enter the relevant information into the input form and then click on **Connect**.
 

@@ -18,7 +18,7 @@ To create a model, right-click on the white surface and navigate to **Add** -> *
 
 Now, specify the name of your model and confirm by clicking **Create**.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Congratulations, you have created your first model. The result should now look like this:
 
