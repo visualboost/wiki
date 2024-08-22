@@ -8,22 +8,37 @@ The plugin automates these steps, making it easy to add an Extension. Simply rig
 
 <figure><img src="../.gitbook/assets/add_extension.gif" alt=""><figcaption><p>Creating a new extension</p></figcaption></figure>
 
-To add a new extension you can use one of the following [Live Templates](https://www.jetbrains.com/help/webstorm/using-live-templates.html#live\_templates\_types):&#x20;
+## Add Extensions
+
+To add a new extension you can use one of the following [Live Templates](https://www.jetbrains.com/help/webstorm/using-live-templates.html#live\_templates\_types) within the Javascript File:
 
 {% tabs %}
 {% tab title="get" %}
-<figure><img src="../.gitbook/assets/add_extension_get.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/add_extension_get.gif" alt=""><figcaption><p>Add a GET extension</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="post" %}
-<figure><img src="../.gitbook/assets/add_extension_post.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/add_extension_post.gif" alt=""><figcaption><p>Add a POST extension</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="put" %}
-<figure><img src="../.gitbook/assets/add_extension_put.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/add_extension_put.gif" alt=""><figcaption><p>Add a PUT extension</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="delete" %}
-<figure><img src="../.gitbook/assets/add_extension_delete.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/add_extension_delete.gif" alt=""><figcaption><p>Add a DELETE extension</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
+
+
+
+## Define types
+
+To simplify the definition of the **@body**, **@return**, and **@errors** [annotations](../model-editor/model/functions/extension.md#annotation-values), the plugin offers additional templates for defining data types and error structures.&#x20;
+
+To select a simple data type, you can use the `type` live template.&#x20;
+
+<figure><img src="../.gitbook/assets/select_simple_type.gif" alt=""><figcaption></figcaption></figure>
+
+To define an enum, the "enum" live template can be used. For defining an object, use the "object" live template. To define an array, the "array" live template is available.
+

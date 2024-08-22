@@ -58,7 +58,7 @@ VisualBoost provides 4 different annotations:
 
 
 
-### Annotation values:
+### Annotation values
 
 The annotations **@body** and **@return** can be used to define the request and response bodies of a route. The following data types are supported:
 
@@ -78,7 +78,7 @@ The annotations **@body** and **@return** can be used to define the request and 
          location: Location
       }
  }
-</code></pre></td></tr><tr><td>Array</td><td>Send or return multiple values</td><td><p>Return an array of objects:</p><pre><code>@return: [{
+</code></pre></td></tr><tr><td><strong>Array</strong></td><td>Send or return multiple values</td><td><p>Return an array of objects:</p><pre><code>@return: [{
      name: String,
      age: Int,
      address: {
