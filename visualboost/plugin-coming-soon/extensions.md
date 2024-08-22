@@ -12,11 +12,11 @@ To add a new extension you can use one of the following [Live Templates](https:/
 
 {% tabs %}
 {% tab title="get" %}
-
+<figure><img src="../.gitbook/assets/add_extension_get.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="post" %}
-<figure><img src="../.gitbook/assets/add_extension_delete.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/add_extension_post.gif" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="put" %}
