@@ -36,9 +36,17 @@ To add a new extension you can use one of the following [Live Templates](https:/
 
 To simplify the definition of the **@body**, **@return**, and **@errors** [annotations](../model-editor/model/functions/extension.md#annotation-values), the plugin offers additional templates for defining data types and error structures.&#x20;
 
+### @body and @return templates
+
 To select a simple data type, you can use the `type` live template.&#x20;
 
 <figure><img src="../.gitbook/assets/select_simple_type.gif" alt=""><figcaption></figcaption></figure>
 
-To define an enum, the "enum" live template can be used. For defining an object, use the "object" live template. To define an array, the "array" live template is available.
+To define an enum, the `enum` live template can be used.&#x20;
+
+
+
+
+
+For defining an object, use the "object" live template. To define an array, the "array" live template is available.
 

@@ -68,7 +68,7 @@ The annotations **@body** and **@return** can be used to define the request and 
 </code></pre></td></tr><tr><td><strong>String</strong></td><td>Send or return a single string value</td><td><pre><code>@return: Stringation
 </code></pre></td></tr><tr><td><strong>Date</strong></td><td>Send or return a single date value</td><td><pre><code>@return: Date
 </code></pre></td></tr><tr><td><strong>Location</strong></td><td>Send or return a single location value (array with latitude and longitude)</td><td><pre><code>@return: Location
-</code></pre></td></tr><tr><td><strong>Enumeration</strong></td><td>Send or return a single enumeration value</td><td><pre><code>@return: Gender(MALE, FEMALE)
+</code></pre></td></tr><tr><td><strong>Enumeration</strong></td><td>Send or return a single enumeration value. The structure of the <strong>Enum</strong> annotation is represented as <strong>ENUM_NAME(VALUE1, VALUE2, ...).</strong></td><td><pre><code>@return: Gender(MALE, FEMALE)
 </code></pre></td></tr><tr><td><strong>Object</strong></td><td>Send or return a single object </td><td><pre class="language-json"><code class="lang-json">@return: {
      name: String,
      age: Int,
