@@ -1,8 +1,8 @@
 ---
-description: 20.08.2024
+description: coming soon ...
 ---
 
-# Plugin (coming soon)
+# Plugin
 
 The VisualBoost plugin for [WebStorm ](https://www.jetbrains.com/webstorm/)seamlessly integrates powerful software development tools directly into your JetBrains IDE. Enhance your development workflow with features designed to simplify project creation and extension management.
 
