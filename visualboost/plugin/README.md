@@ -1,5 +1,5 @@
 ---
-description: coming soon ...
+description: 'Current Version:  1.0.0-alpha.03'
 ---
 
 # Plugin
@@ -24,7 +24,7 @@ Add extension files via Webstorm and use live templates to easily enhance your p
 
 Sync your extension with VisualBoost with one click.
 
-###
+
 
 
 
