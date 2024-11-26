@@ -4,7 +4,7 @@ description: 'Current Version:  1.0.0-alpha.03'
 
 # Plugin
 
-The VisualBoost plugin for [WebStorm ](https://www.jetbrains.com/webstorm/)seamlessly integrates powerful software development tools directly into your JetBrains IDE. Enhance your development workflow with features designed to simplify project creation and extension management.
+The [VisualBoost plugin for WebStorm and IntelliJ Ultimate](https://plugins.jetbrains.com/plugin/24273-visualboost) seamlessly integrates powerful software development tools directly into your JetBrains IDE. Enhance your development workflow with features designed to simplify project creation and extension management.
 
 ## Advantages
 
